@@ -1,0 +1,295 @@
+ls 
+echo $SHELL
+vi skrypt.sh
+ls -la skrypt.sh
+chmod +x skrypt.sh 
+ls -la
+./skrypt.sh 
+vi skrypt.sh
+which bash
+ls -la /usr/bin/bash
+ls -la /bin/bash
+which cd
+which rpm
+vi skrypt.sh
+which perl
+vi skrypt.sh
+bash skrypt.sh 
+sh skrypt.sh
+which sh
+ls -la /usr/bin/sh
+cd
+vi skrypt.sh
+cd bash_Sep/
+vi skrypt.sh 
+echo "Moj shell to $SHELL"
+echo 'Moj shell to $SHELL'
+vi hello_world.sh
+chmod +x hello_world.sh
+./hello_world.sh 
+vi backup.sh
+chmod +x backup.sh 
+./backup.sh 
+echo $? 
+vi backup.sh
+./backup.sh 
+echo $? 
+cd 
+echo $? 
+cat /tmp/test123544
+echo $? 
+cd bash_Sep/
+vi skrypt.sh 
+vi backup.sh 
+./backup.sh 
+vi backup.sh 
+vi hello_world.sh 
+./hello_world.sh Marcin
+./hello_world.sh Marcin Aga Zenek
+./hello_world.sh Marcin
+vi hello_world.sh 
+./hello_world.sh Marcin Aga Zenek
+vi hello_world.sh 
+./hello_world.sh Marcin Aga Zenek
+vi hello_world.sh 
+./hello_world.sh Marcin Aga Zenek
+vi hello_world.sh 
+./hello_world.sh Marcin Aga Zenek
+vi hello_world.sh 
+vi backup.sh 
+./backup.sh 
+vi backup.sh 
+./backup.sh arg1
+echo "Test 123" > /tmp/test
+cat /tmp/test
+echo "cos innego " > /tmp/test
+cat /tmp/test
+echo "Test 123" >> /tmp/test
+cat /tmp/test
+vi /tmp/test 
+sort -h
+man sort
+sort /tmp/test 
+sort < /tmp/test 
+sort < /tmp/test > /tmp/sorted
+cat /tmp/sorted
+vi backup.sh 
+./backup.sh 
+cat errors.log 
+q
+./backup.sh 
+vi backup.sh 
+./backup.sh 
+cat logfile.log 
+vi backup.sh 
+cat logfile.log |grep usr
+man grep
+grep usr logfile.log 
+VAR1=5
+VAR2="test123"
+VAR3="to jest moj shell $SHELL"
+echo $VAR1 
+echo $VAR2
+echo $VAR3
+echo $VAR4=3.24
+echo $VAR4="3.24"
+VAR4=3.23
+echo VAR4
+echo $VAR4
+env
+which cd
+kuebctl
+cp -rp /usr/bin/cd /usr/bin/kubectl 
+sudo cp -rp /usr/bin/cd /usr/bin/kubectl 
+kuebctl /tmp
+kubectl /tmp
+ls -la /usr/bin/kubectl 
+kubectl /tmp
+cd /usr/bin
+sudo rm /usr/bin/kubectl
+sudo cp /usr/bin/cat /usr/bin/pokaz
+pokaz skrypt.sh 
+echo $PATH
+env | grep PATH
+printenv 
+cd
+cd bash_Sep/
+vi backup.sh 
+./backup.sh 
+less logfile.log 
+vi backup.sh 
+less ../log_file.txt 
+vi backup.sh 
+./backup.sh 
+less ../log_file.txt 
+./backup.sh 
+vi backup.sh 
+echo $LOGFILE
+vi backup.sh 
+vi update_logfile_var.sh
+vi backup.sh 
+./backup.sh 
+chmod +x update_logfile_var.sh 
+./backup.sh 
+vi backup.sh 
+vi update_logfile_var.sh
+./backup.sh 
+vi backup.sh 
+vi update_logfile_var.sh
+./backup.sh 
+vi backup.sh 
+cp -rp backup.sh backup2.sh 
+vi backup2.sh 
+rm backup2.sh 
+vi backup.sh 
+vi /etc/environment 
+echo $ZMIENNA1
+vi /etc/environment 
+sudo vi /etc/environment 
+echo $ZMIENNA1
+cd bash_Sep/
+LICZBY=(jeden 2 3 4 "to jest piec")
+echo $LICZBY
+echo ${LICZBY[@]}
+echo ${LICZBY[2]}
+echo ${LICZBY[1]}
+echo ${LICZBY[0]}
+echo ${#LICZBY[@]}
+LICZBY+=(szesc)
+echo ${#LICZBY[@]}
+echo ${LICZBY[@]}
+LICZBY+=(7 8)
+echo ${LICZBY[@]}
+echo ${LICZBY[@]:2:5}
+man unset
+unset LICZBY 
+echo ${LICZBY[@]}
+LICZBY=(jeden 2 3 4 "to jest piec")
+echo ${LICZBY[@]:2}
+LICZBY=(a1 a2 {1..10} {a-z})
+echo ${LICZBY[@]}
+LICZBY=(a1 a2 {1..10} {a..z})
+echo ${LICZBY[@]}
+unset LICZBY[1]
+echo ${LICZBY[@]}
+LICZBY+=(element nowy)
+echo ${LICZBY[@]}
+vi backup.sh 
+./backup.sh 
+less ../log_file.txt 
+KATALOG=`pwd`
+echo $KATALOG 
+pwd
+SSHD_STATUS=$(systemctl status sshd)
+echo $SSHD_STATUS 
+SSHD_STATUS=`systemctl status sshd`
+echo $SSHD_STATUS 
+vi  backup.sh 
+date
+date +%d/%m
+date +%d/%m/%y
+date +%d/%m/%y %r
+date +"%d/%m/%y %r"
+date +"%d/%m/%y %r%Z"
+date +"%d/%m/%y %r%m"
+date +"%d/%m/%y %r%"
+date +"%d/%m/%y %r"
+vi backup.sh 
+./backup.sh 
+vi backup.sh 
+./backup.sh 
+less ../log_file.txt 
+date +"%D/%m/%y %r"
+date +"%D"
+date +"%M"
+date +"%H"
+TEST=`date +"%D/%m/%y %r"`
+echo $TEST
+vi backup.sh 
+vi skrypt1.sh
+./skrypt.sh 
+./skrypt1.sh 
+chmod +x ./skrypt1.sh
+./skrypt1.sh 
+./skrypt1.sh marcin 18
+./skrypt1.sh marcin 18 cos
+git pull
+cat << KONIEC
+
+
+
+
+
+cat > heredoc.txt << EOF
+
+
+
+
+cat heredoc.txt
+cat <<< heredoc.txt 
+cat < heredoc.txt 
+vi heredoc.sh
+chmod +x heredoc.
+chmod +x heredoc.sh 
+./heredoc.sh 
+ls
+cat Plik1
+cat Plik2
+cat Plik3
+vi heredoc.sh
+./heredoc.sh 
+cat Plik3
+vi script_checker.sh
+chmod +x script_checker.sh
+./script_checker.sh skrypt1.sh 
+vi skrypt1.sh 
+./script_checker.sh skrypt1.sh 
+vi skrypt1.sh 
+echo
+man echo
+echo "Test\n test"
+echo -e "Test\n test"
+echo -e "Test test: \c"
+echo -n "Test test:"
+echo -e "Test test: \t"
+echo -e "Test \t test:"
+read
+$REPLY
+echo $REPLY
+read
+echo $REPLY
+echo -n "Podaj liczbe: "; read; echo $REPLY
+read --help
+echo -n "Podaj liczbe: "; read; echo $REPLY
+read -p "Podaj liczbe: " LCIZBA
+echo $LICZBA
+echo $LCIZBA
+read -p "Podaj liczbe: " a
+read -p "Podaj liczbe: " b
+wynik=$(($a+$b))
+echo $wynik 
+$(systemctl status sshd)
+wynik=$(systemctl status sshd)
+echo $wynik 
+vi skrypt2.sh 
+chmod +x skrypt2.sh
+./skrypt2.sh 
+./script_checker.sh skrypt2.sh 
+man read
+read -n1 -p "Czy kontynuowac [y/n]: " decyzja
+read -n1 -p "Czy kontynuowac [y3n]: " decyzja
+read -n3 -p "Czy kontynuowac [y3n]: " decyzja
+zmienna=${PATH:-wartDomyslna}  
+echo $zmienna 
+zmienna=${test12:-wartDomyslna}  
+echo $zmienna 
+vi backup.sh 
+./backup.sh 
+less /tmp/testDollarSign.txt
+read -p -s "Podaj haslo: " 
+read -p -s "Podaj haslo: " secret
+read -s -p  "Podaj haslo: " secret
+echo $secret 
+vi backup.sh 
+history
+history | awk '$1 > 236' | cut -c 8- > day1-history.txt
