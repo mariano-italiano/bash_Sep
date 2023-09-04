@@ -293,3 +293,211 @@ echo $secret
 vi backup.sh 
 history
 history | awk '$1 > 236' | cut -c 8- > day1-history.txt
+ls -la
+git add backup.sh day1-history.txt hello_world.sh heredoc.sh skrypt1.sh skrypt2.sh skrypt.sh update_logfile_var.sh 
+git commit -m "Adding day1 script and history file"
+git config --global credential.helper store; git config --global user.email "markuj5@gmail.com"
+git status
+git push
+ls
+git status
+vi syncGit.sh
+chmod +x syncGit.sh 
+./syncGit.sh
+vi syncGit.sh
+./syncGit.sh
+vi syncGit.sh
+man getopts
+vi backup.sh 
+./backup.sh -f /tmp/getopts.txt -s /usr/bin/* -d /tmp/
+ls -la /tmp/
+./backup.sh -f /tmp/getopts.txt -s /usr/bin/* -d /tmp/backup 
+ls -la /tmp/
+vi backup.sh 
+less /tmp/getopts.txt
+vi backup.sh 
+./backup.sh -f /tmp/getopts.txt -s /usr/bin/ -d /tmp/backup 
+less /tmp/getopts.txt
+ls -la /tmp/
+ls -la /tmp/backup/
+vi backup.sh 
+./backup.sh -f /tmp/getopts.txt -s /usr/bin/ -d /tmp/backup 
+ls -la /tmp/backup/
+ls -la /tmp/backup/bin/
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+cd -h
+install -h
+install --help
+man shift
+echo -e "\033[31m$SHELL"
+echo -e "\033[31m$SHELL\033[0m"
+echo -e "\033[32m$SHELL\033[0m"
+echo -e "\033[33m$SHELL\033[0m"
+echo -e "\033[34m$SHELL\033[0m"
+echo -e "\033[35m$SHELL\033[0m"
+echo -e "\033[36m$SHELL\033[0m"
+echo -e "\033[37m$SHELL\033[0m"
+echo -e "\033[38m$SHELL\033[0m"
+echo -e "\033[30m$SHELL\033[0m"
+echo -e "\033[32m$SHELL\033[0m"
+echo -e "\033[31m$SHELL\033[0m"
+vi backup.sh 
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+vi lab1.sh
+ssh-keygen 
+ssh-copy-id localadmin@51.136.112.65
+chmod +x lab1.sh 
+./lab1.sh -s 51.136.112.65
+ssh-copy-id centos9
+for i in "51.136.112.65" "centos9" ; do ./lab1.sh -s $i ;done
+vi lab1.sh
+a=4
+b=2
+test $a -eq $b
+echo $?
+test
+echo $?
+test $a -eq 4
+echo $?
+[ $b -lt 3]
+[ $b -lt 3 ]
+echo $?
+[ $b -lt 2 ]
+echo $?
+[ -z $SHELL ]
+echo $?
+[! -z $SHELL ]
+[ ! -z $SHELL ]
+echo $?
+[ -n $SHELL ]
+echo $?
+[ -b /dev/tty1 ]
+echo $?
+[ -c /dev/tty1 ]
+echo $?
+vi backup.sh 
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+vi backup.sh 
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+vi backup.sh 
+./backup.sh 
+./backup.sh -s /usr/bin/ -d /tmp/backup 
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+vi backup.sh 
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+vi backup.sh 
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+echo $?
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+rm /tmp/getopts.txt
+touch /tmp/getopts.txt
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+vi backup.sh 
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+vi backup.sh 
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+vi backup.sh 
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+vi backup.sh 
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+vi backup.sh 
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+vi backup.sh 
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+a=5
+b=2
+echo "scale=2; $a/$b" | bc"
+echo "scale=2; $a/$b" | bc
+echo "scale=4; $a/$b" | bc
+vi syncGit.sh 
+for el in 12 13 14 ; do  echo $el ; done
+for i in seq 1 10; do echo $i; done
+for i in $(seq 1 10); do echo $i; done
+for i in $(seq 1 10); do touch plik$i; done
+ls -la plik*
+for i in $(seq 1..10..2) ; do echo $i; done
+for i in $(seq 1 2 10) ; do echo $i; done
+for i in $(seq 1 3 10) ; do echo $i; done
+for i in ${1..15..2} ; do echo $i; done
+for i in {1..15..2} ; do echo $i; done
+echo LICZBY
+echo #LICZBY
+echo $LICZBY
+echo $(LICZBY[@])
+echo ($LICZBY[@])
+for i in "${LICZBY[@]}" ; do echo $i;  done
+for i in `ls plik*` ; do echo $i;  done
+ls plik*
+for i in `ls plik*` ; do echo "wypelniam plik tymi samymi danymi" > $i;  done
+cat plik10
+cat plik1
+vi syncGit.sh 
+./syncGit.sh 
+ssh-copy-id 51.136.112.65
+ssh-copy-id localadmin@51.136.112.65
+vi syncGit.sh 
+./syncGit.sh 
+vi syncGit.sh 
+./syncGit.sh 
+vi syncGit.sh 
+./syncGit.sh 
+vi syncGit.sh 
+./syncGit.sh 
+ssh localadmin@51.136.112.65
+ssh-copy-id localadmin@51.136.112.121 
+ssh-copy-id localadmin@51.136.112.125
+ssh-copy-id localadmin@51.136.114.6
+ssh-copy-id localadmin@51.136.114.104
+ssh-copy-id localadmin@51.136.114.106
+vi syncGit.sh 
+./syncGit.sh 
+vi syncGit.sh 
+less ../log_file.txt 
+ls -la /usr/bin/sudo
+vi backup.sh 
+BACKUP_LOC=/usr/bin/
+find $BACKUP_LOC -perm /u+s
+vi backup.sh 
+./backup.sh \
+./backup.sh -f
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+vi backup.sh 
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+less /tmp/backup/setuid.list
+vi backup.sh 
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+v
+less /tmp/backup/setuid.list
+rm /tmp/backup/setuid.list
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+less /tmp/backup/setuid.list
+vi backup.sh 
+rm /tmp/backup/setuid.list
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+less /tmp/backup/setuid.list
+vi backup.sh 
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+less /tmp/backup/setuid.list
+rm /tmp/backup/setuid.list
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+less /tmp/backup/setuid.list
+vi backup.sh 
+less /tmp/backup/setuid.list
+vi nieparzyste.sh
+chmod +x nieparzyste.sh
+./nieparzyste.sh
+vi nieparzyste.sh 
+./nieparzyste.sh
+vi nieparzyste.sh 
+./nieparzyste.sh
+vi nieparzyste.sh 
+./nieparzyste.sh
+vi nieparzyste.sh 
+ssh localadmin@51.136.114.6
+ls -la
+git status
+git add backup.sh lab1.sh  nieparzyste.sh syncGit.sh
+git commit -m "Adding scripts"
+git push
+history
+history | awk '$1 > 236' | cut -c 8- > day1-history.txt
