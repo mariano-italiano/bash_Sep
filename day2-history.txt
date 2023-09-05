@@ -1,0 +1,469 @@
+./syncGit.sh 
+ssh localadmin@51.136.112.65
+ssh-copy-id localadmin@51.136.112.121 
+ssh-copy-id localadmin@51.136.112.125
+ssh-copy-id localadmin@51.136.114.6
+ssh-copy-id localadmin@51.136.114.104
+ssh-copy-id localadmin@51.136.114.106
+vi syncGit.sh 
+./syncGit.sh 
+vi syncGit.sh 
+less ../log_file.txt 
+ls -la /usr/bin/sudo
+vi backup.sh 
+BACKUP_LOC=/usr/bin/
+find $BACKUP_LOC -perm /u+s
+vi backup.sh 
+./backup.sh \
+./backup.sh -f
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+vi backup.sh 
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+less /tmp/backup/setuid.list
+vi backup.sh 
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+v
+less /tmp/backup/setuid.list
+rm /tmp/backup/setuid.list
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+less /tmp/backup/setuid.list
+vi backup.sh 
+rm /tmp/backup/setuid.list
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+less /tmp/backup/setuid.list
+vi backup.sh 
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+less /tmp/backup/setuid.list
+rm /tmp/backup/setuid.list
+./backup.sh -s /usr/bin/ -d /tmp/backup -f /tmp/getopts.txt
+less /tmp/backup/setuid.list
+vi backup.sh 
+less /tmp/backup/setuid.list
+vi nieparzyste.sh
+chmod +x nieparzyste.sh
+./nieparzyste.sh
+vi nieparzyste.sh 
+./nieparzyste.sh
+vi nieparzyste.sh 
+./nieparzyste.sh
+vi nieparzyste.sh 
+./nieparzyste.sh
+vi nieparzyste.sh 
+ssh localadmin@51.136.114.6
+ls -la
+git status
+git add backup.sh lab1.sh  nieparzyste.sh syncGit.sh
+git commit -m "Adding scripts"
+git push
+history
+history | awk '$1 > 236' | cut -c 8- > day1-history.txt
+git add day1-history.txt 
+git commit -m "Adding history file"
+git push
+ssh localadmin@51.136.114.6
+cd bash_Sep/
+ls -la /tmp
+sudo cp -r /tmp/bash_scripting/r01-podstawy-bash/ .
+sudo cp -r /tmp/bash_scripting/r02-deklarowanie-zmiennych/ .
+sudo cp -r /tmp/bash_scripting/r03-heredoc/ .
+sudo cp -r /tmp/bash_scripting/r04-tworzenie-interaktywnych-skryptow/ .
+sudo cp -r /tmp/bash_scripting/r05-instrukcje-warunkowe/.
+sudo cp -r /tmp/bash_scripting/r05-instrukcje-warunkowe/ .
+sudo cp -r /tmp/bash_scripting/r06-petle/ .
+git status
+git add r01-podstawy-bash/ r02-deklarowanie-zmiennych/ r03-heredoc/ r04-tworzenie-interaktywnych-skryptow/ r05-instrukcje-warunkowe/ r06-petle/ 
+git commit -m "Adding scripts"
+git push
+vi while.sh
+chmod +x while.sh 
+./while.sh 
+vi while.sh
+./while.sh 
+vi while.sh
+./while.sh 
+vi while.sh
+./while.sh 
+vi while.sh
+./while.sh 
+vi while.sh
+./while.sh 
+vi while.sh
+./while.sh 
+vi while.sh
+vi testServers.sh
+vi servers
+chmod +x testServers.sh 
+./testServers.sh
+ssh localadmin@51.136.112.65
+curl -v telnet://51.136.112.65:22
+curl -v telnet://51.136.112.65:22 -w "%{http_code}"
+curl -s -o /dev/null -w "%{http_code}" telnet://51.136.112.65:22
+curl -v telnet://51.136.112.65:22 | grep Connected
+curl -v telnet://51.136.112.65:22 -o /dev/null | grep Connected
+curl -v telnet://51.136.112.65:22 -s | grep Connected
+man curl
+curl -s telnet://51.136.112.65:22
+curl -s telnet://51.136.112.65:22 -l
+curl -s telnet://51.136.112.65:23
+./testServers.sh
+vi testServers.sh 
+vi backup.sh 
+./backup.sh 
+vi backup.sh 
+./backup.sh -f /home/student/logDay2.txt -s /usr/bin/ -d /tmp/backupDay2
+vi backup.sh 
+./backup.sh -f /home/student/logDay2.txt -s /usr/bin/ -d /tmp/backupDay2
+vi backup.sh 
+./backup.sh -f /home/student/logDay2.txt -s /usr/bin/ -d /tmp/backupDay2
+ls /tmp/
+ls -h/tmp/
+ls -h /tmp/
+ls -lahh /tmp/
+du -sh backupDay2
+du -sh /tmp/backupDay2
+du -sh /tmp/backupDay2*
+vi backup.sh 
+./backup.sh -f /home/student/logDay2.txt -s /usr/bin/ -d /tmp/backupDay2
+cp /tmp/bash_scripting/r06-petle/sprawdz.sh .
+vi sprawdz.sh 
+file sprawdz.sh
+file /tmp/backupDay2.tar.gz 
+file /tmp/backupDay2.tar.gz | cut -d : -f2
+file /tmp/backupDay2.tar.gz | cut -d : -f2 | cut -d , -f1
+file skrypt.sh | cut -d : -f2 | cut -d , -f1
+vi sprawdz.sh 
+chmod +x sprawdz.sh
+./sprawdz.sh 
+./sprawdz.sh /tmp
+./sprawdz.sh .
+pwd
+ls -la
+ls -la /tmp
+man ln
+ln -s /tmp/bash_scripting/ skrypty
+ls -la
+cd skrypty/
+pwd
+ls -la
+cd /tmp/bash_scripting/
+pwd
+ls -la
+ls -la /bin/bash
+ls -la /bin/sh
+cd 
+cd bash_Sep/
+ls -la
+ls -lai
+ln skrypt.sh hardlink
+ls -lai
+vi hardlink 
+vi skrypt.sh
+find . -inode 36553163
+find . -i 36553163
+man find
+find . -inum 36553163
+cat /etc/passwd
+vi lab3.sh
+ip a | grep inet | grep ens | awk '{print $2}'
+vi lab3.sh
+man passwd
+vi lab3.sh
+vi users.csv
+chmod +x lab3.sh 
+./lab3.sh 
+./lab3.sh -f users.csv 
+vi alb3.
+vi bash_Sep/lab3.sh 
+kill -l
+vi loop.sh
+chmod +x loop.sh 
+./loop.sh 
+vi loop.sh
+./loop.sh 
+vi loop.sh
+./loop.sh 
+vi loop.sh
+./loop.sh & 
+vi loop.sh
+vi lab5.sh
+who | wc -l
+who
+who | wc -l
+who
+vi lab5.sh
+chmod +x lab5.sh 
+./lab5.sh &
+./lab5.sh -f /tmp/user-monitor.log &
+ps -ef | grep -i 4118
+kill -15 4118
+ps -ef | grep -i 4118
+./lab5.sh -f user-monitor.log &
+tail -f /tmp/user-monitor.log 
+./lab5.sh -f user-monitor.log &
+tail -f /tmp/user-monitor.log 
+ps -ef | grep -i lab5.sh
+kill -9 4118
+ps -ef | grep -i lab5.sh
+tail -f /tmp/user-monitor.log 
+kill -9 4155 4220
+./lab5.sh -f user-monitor.log &
+tail -f /tmp/user-monitor.log 
+cat /tmp/user-monitor.log | grep WARN
+cat /tmp/user-monitor.log | grep INFO
+ps -ef | grep -i lab5.sh
+kill -9 4292
+vi plik
+cat plik
+mv plik plik.txt
+grep plik plik.txt 
+grep -i plik plik.txt 
+grep -v plik plik.txt 
+grep -vi plik plik.txt 
+grep -vin plik plik.txt 
+cat /etc/ssh/sshd_config | grep -v "#"
+sudo cat /etc/ssh/sshd_config | grep -v "#"
+sudo vi /etc/ssh/sshd_config 
+sudo cat /etc/ssh/sshd_config | grep -vn "#"
+cat /var/log/messages
+sudo cat /var/log/messages
+sudo cat /var/log/messages | grep -i fail
+sudo cat /var/log/messages | grep "libEGL warning: egl: failed to create dri2 screen"
+sudo cat /var/log/messages | grep "libEGL warning: egl: failed to create dri2 screen" -A 5 -B 10
+grep -c plik.txt 
+grep -c test plik.txt 
+grep -ic test plik.txt 
+grep -ic plik plik.txt 
+cat plik.txt
+grep -ic "libEGL warning" /var/log/messages
+sudo grep -ic "libEGL warning" /var/log/messages
+sudo grep -nic "libEGL warning" /var/log/messages
+sudo grep -in "libEGL warning" /var/log/messages
+sudo grep -in "libEGL warning" /var/log/messages | grep -v "Sep  4"
+sudo head -n1 /var/log/messages; sudo grep -in "libEGL warning" /var/log/messages | grep -v "Sep  4"
+sudo head -n1 /var/log/messages; sudo grep -i "libEGL warning" /var/log/messages | grep -v "Sep  4"
+sudo grep -e "libEGL warning" /var/log/messages -e "journal[1345]"
+sudo grep -e "libEGL warning" -e "journal[1345]" /var/log/messages
+cat plik.txt 
+grep -e zmienna -e koment
+grep -e zmienna -e koment plik.txt
+egrep 'zmienna|koment' plik.txt 
+cat plik.txt 
+vi plik.txt 
+grep ^koniec plik.txt 
+grep koniec plik.txt 
+grep tutaj$ plik.txt 
+grep tutaj plik.txt 
+sed 'p' plik.txt 
+sed -n 'p' plik.txt 
+sed -n '1,3p' plik.txt 
+sed  '1,3p' plik.txt 
+sed -n '1,3p' plik.txt 
+sed -n '/^#/ p' plik.txt 
+sed -n '/tutaj/ p' plik.txt 
+sed -n '/tutaj$/ p' plik.txt 
+man sed
+cat plik.txt 
+sed 's/znak/superznak' plik.txt 
+sed 's/znak/superznak/' plik.txt 
+vi plik.txt 
+sed -i 's/znak/superznak/' plik.txt 
+vi plik.txt 
+sed 's/plik/plik2/' plik.txt 
+sed 's/plik/plik2/I' plik.txt 
+sed 's/plik/plik2/gI' plik.txt 
+vi plik.txt 
+sed 's/\bto\b/apsik/gI' plik.txt 
+sed 's/to/apsik/gI' plik.txt 
+vi plik.txt 
+sed 's/bash/sh/gI' plik.txt 
+sed 's/bin/bash/sbin/ksh/gI' plik.txt 
+sed 's=bin/bash=sbin/ksh=gI' plik.txt 
+sed 's$bin/bash$sbin/ksh$gI' plik.txt 
+vi plik.txt 
+sed 's/\b[0-9]\{3}\b/3-cyfrowa liczba/g' plik.txt 
+sed 's/\b[0-9]\{3\}\b/3-cyfrowa liczba/g' plik.txt 
+sed 's/\b[0-9]\{2\}\b/3-cyfrowa liczba/g' plik.txt 
+sed 's/\b[0-9]\{3\}\b/&0/g' plik.txt 
+sed 's/\b[0-9]\{3\}\b/liczba &/g' plik.txt 
+sed 'd' plik.txt 
+vi plik.txt 
+sed '1,3d' plik.txt 
+sed '7d' plik.txt 
+cat plik.txt | grep -n
+cat plik.txt | grep -n " "
+sed '7d' plik.txt 
+sed '3,$d' plik.txt 
+cat plik.txt | grep -n " "
+sed '2i\nowytekst na drugiej linijce' plik.txt 
+sed '2a\nowytekst na drugiej linijce' plik.txt 
+sed '3c\nowytekst na trzeciej linijce' plik.txt 
+sed -e 's/koniec/poczatek/gI ; s/tutaj/here/gI' plik.txt 
+which awk
+ls -la `which awk`
+cat plik.txt 
+awk '{ print }' plik.txt 
+awk '{ print $0 }' plik.txt 
+awk '{ print $1 }' plik.txt 
+awk '{ print $2 }' plik.txt 
+awk -F"=" '{ print $1 }' plik.txt 
+awk 'BEGIN { FS="=" } { print $1 }' plik.txt 
+awk 'BEGIN { FS="=" } { print $1 } END { print NR }' plik.txt 
+awk 'END { print NR }' plik.txt 
+cat plik.txt | wc -l
+sed '1,3p' plik.txt 
+sed -n '1,3p' plik.txt 
+head -n3 plik.txt
+awk 'BEGIN { FS="," } {$2=""; print $0}' data.csv
+awk 'BEGIN { FS="," } {$2=""; print $0}' bash_Sep/data.csv
+awk 'BEGIN { FS="," } {$2=""; print $1,$3,$4}' bash_Sep/data.csv
+awk 'BEGIN { FS="," } {$2=""; print $1",",$3,$4}' bash_Sep/data.csv
+awk 'BEGIN { FS="," } {$2=""; print $1",",$3",",$4}' bash_Sep/data.csv
+awk 'BEGIN { FS="," } {$2=""; print $1",",$3",",$4}' bash_Sep/data.csv | tr ', ' ','
+awk 'BEGIN { FS="," } {$2=""; print $1",",$3",",$4}' bash_Sep/data.csv | sed 's/, /,/g'
+awk 'BEGIN { FS="," } {$3=""; print $1",",$2",",$4}' bash_Sep/data.csv | sed 's/, /,/g'
+ls -la
+cd bash_Sep/
+data.csv
+cd ..
+ls -la
+cd bash_Sep/
+sudo cp /root/users.csv .
+vi users.csv 
+cat users.csv
+awk 'BEGIN {FS=","} {$2=""; print $1,$3,$4}' users.csv 
+awk 'BEGIN {FS=","} {$2=""; print $1",",$3",",$4}' users.csv 
+awk 'BEGIN {FS=","} {$2=""; print $1",",$3",",$4}' users.csv | sed 's/, /,/g' 
+awk 'BEGIN {FS=","} {$2=""; print $1",",$3",",$4}' users.csv | sed 's/, /,/g' > nowy.csv
+vi nowy.csv 
+awk 'BEGIN {FS=","} {$2=""; print $0}' users.csv | sed 's/, /,/g' > nowy.csv
+vi nowy.csv 
+awk 'BEGIN {FS=","} {$2=""; print $0}' users.csv
+awk 'BEGIN {FS=","} {ORS="," $2=""; print $0}' users.csv
+awk 'BEGIN {FS=","} {ORS=","; $2=""; print $0}' users.csv
+awk 'BEGIN {FS=","} {OFS=","; $2=""; print $0}' users.csv
+awk 'BEGIN {FS=","} {OFS=","; $2=""; print $0}' users.csv | sed 's/,,/,/g'
+awk 'BEGIN {FS=","} {OFS=","; $3=""; print $0}' users.csv | sed 's/,,/,/g'
+awk 'BEGIN {FS=","} {OFS=","; $4=""; print $0}' users.csv | sed 's/,,/,/g'
+awk 'BEGIN {FS=","} {OFS=","; $4=""; print $0}' users.csv | sed 's/,,/,/g' | sed 's/,$//g' 
+awk 'BEGIN {FS=","} {OFS=","; $2=""; print $0}' users.csv | sed 's/,,/,/g' | sed 's/,$//g' 
+awk 'BEGIN {FS=","} {OFS=","; $1=""; print $0}' users.csv | sed 's/,,/,/g' | sed 's/,$//g' 
+awk 'BEGIN {FS=","} {OFS=","; $1=""; print $0}' users.csv | sed 's/,,/,/g' | sed -e 's/,$//g' ; 's/^,//g' 
+awk 'BEGIN {FS=","} {OFS=","; $1=""; print $0}' users.csv | sed 's/,,/,/g' | sed -e 's/,$//g ; s/^,//g' 
+vi plik1
+cat plik1 | grep -n ""
+vi skrypt.sh 
+awk 'BEGIN {FS=","} {OFS=","; ORS="\n" $1=""; print $0}' users.csv | sed 's/,,/,/g' | sed -e 's/,$//g ; s/^,//g' 
+awk 'BEGIN {FS=","} {OFS=","; ORS="\n"; $1=""; print $0}' users.csv | sed 's/,,/,/g' | sed -e 's/,$//g ; s/^,//g' 
+awk 'BEGIN {FS=","} {OFS=","; ORS="\n\n"; $1=""; print $0}' users.csv | sed 's/,,/,/g' | sed -e 's/,$//g ; s/^,//g' 
+awk 'NR==FNR{n=n s $0; s=ORS; next} { print } FNR==4{print n}' skrypt.sh plik1
+awk 'NR==FNR{n=n s $0; s=ORS; next} { print } FNR==8{print n}' skrypt.sh plik1
+awk 'END { print NR }' plik.txt 
+cd ..
+awk 'END { print NR }' plik.txt 
+awk 'END { print NR }' plik.txt plik.txt 
+awk 'END { print FNR }' plik.txt plik.txt 
+awk 'END { print FNR }' plik.txt
+awk 'NR = 3 }' plik.txt
+awk 'NR = 3 ' plik.txt
+awk 'NR == 3 ' plik.txt
+ls
+vi log_file.txt 
+awk 'NR == 3 ' plik.txt plik.txt
+awk 'NR == 3 ' plik.txt log_file.txt
+awk 'FNR == 3 ' plik.txt log_file.txt
+awk 'NR == 3 ' plik.txt log_file.txt
+awk 'NR > 3 ' plik.txt log_file.txt
+awk 'NR < 10 ' plik.txt log_file.txt
+awk 'NR == 10 , NR==20' plik.txt log_file.txt
+awk 'NR == 5 , NR==20' plik.txt log_file.txt
+awk '/dostępu$/' plik.txt log_file.txt
+awk '/^#/' plik.txt log_file.txt
+awk 'END { print FNR ; printf "Przeprocesowalem plik: %s", FILENAME }' plik.txt
+vi dane
+awk 'BEGIN{FS="\n"; RS=""} {print $1,$3}' dane
+awk 'BEGIN{FS="\n"; RS=""; ORS=""; OFS="\n"} {print $1,$3}' dane
+awk 'BEGIN{FS="\n"; RS=""; ORS="\n\n"; OFS="\n"} {print $1,$3}' dane
+awk 'BEGIN{FS="\n"; RS="\n\n"; ORS="\n\n"; OFS="\n"} {print $1,$3}' dane
+vi dane
+awk 'BEGIN{FS="\n"; RS="\n\n"; ORS=","; OFS="\n"} {print $1,$3}' dane
+awk 'BEGIN{FS="\n"; RS="\n\n"; ORS="\n"; OFS=","} {print $1,$3}' dane
+awk 'BEGIN{FS="\n"; RS="\n\n"; ORS="\n"; OFS=","} {print $1,$3}' dane | tr ' ' ''
+awk 'BEGIN{FS="\n"; RS="\n\n"; ORS="\n"; OFS=","} {print $1,$3}' dane | sed 's/ ,/,/g'
+awk 'BEGIN{FS="\n"; RS="\n\n"; ORS="\n"; OFS=","} {print "Jeden: ",$1 }' dane | sed 's/ ,/,/g'
+awk 'BEGIN{FS="\n"; RS="\n\n"; ORS="\n"; OFS=","} {print "Jeden: "$1 }' dane | sed 's/ ,/,/g'
+awk 'BEGIN{FS="\n"; RS="\n\n"; ORS="\n"; OFS=","} {printf "Imie i nazwisko:%s, Telefon:%s ", $1, $3 }' dane | sed 's/ ,/,/g'
+awk 'BEGIN{FS="\n"; RS="\n\n"; ORS="\n"; OFS=","} {printf "Imie i nazwisko:%s, Telefon:%s\n", $1, $3 }' dane | sed 's/ ,/,/g'
+awk 'BEGIN{FS="\n"} {print $1, "FNR="FNR,"NR="NR }' dane
+awk 'BEGIN{FS="\n"} {print $1, "FNR="FNR,"NR="NR }' dane dane
+vi helloworld.awk
+which awk
+vi helloworld.awk
+awk -h
+awk '{ sum += $1 }; END { print sum }' file
+awk '{ sum += $1 }; END { print sum }' dane
+vi dane 
+vi helloworld.awk 
+awk -f helloworld.awk
+mv helloworld.awk bash_Sep/
+cd bash_Sep/
+awk '
+
+="cos"
+
+Zmienna string1 = " string1
+
+awk '
+
+="cos"
+
+Zmienna string1 = " string1
+rt(var1); print "Pierwiastek z zmiennej var1 = "var2}'
+awk 'BEGIN{randomVar=rand(); print randomVar }'
+awk 'BEGIN{randomVar="moja zmienna"; print length(randomVar) }'
+awk 'BEGIN{randomVar="moja zmienna"; print toupper(randomVar) }'
+awk '
+
+ar="moja zmienna"
+gth(randomVar) > 10) print "Dluga zmienna"
+
+awk '
+
+ar="zmienna"
+gth(randomVar) > 10) print "Dluga zmienna"
+
+vi /etc/login.defs 
+cat /etc/passwd
+awk -F":" '{if ($3 > 200 && $3 < 1000) print $1}' /etc/passwd
+awk -F":" '{if ($3 > 200 && $3 < 1000) print $1 $7}' /etc/passwd
+awk -F":" '{if ($3 > 200 && $3 < 1000) print $1, $7}' /etc/passwd
+awk -F":" '{if ($3 > 200 && $3 < 1000) if ($7.match(/sbin/nologin) print "User ok" }' /etc/passwd
+awk -F":" '{if ($3 > 200 && $3 < 1000) if ($7.match("/sbin/nologin") print "User ok" }' /etc/passwd
+awk -F":" '{if ($3 > 200 && $3 < 1000) if ($7.match("/sbin/nologin")) print "User ok" }' /etc/passwd
+awk 'BEGIN {FS=":"; printf "%20s %5s %17s\n","Name","UID","Shell"} { printf "%20s %5d %17s\n",$1,$3,$7 }' /etc/passwd
+awk 'BEGIN {FS=":"; printf "%s %3s %3s\n","Name","UID","Shell"} { printf "%20s %5d %17s\n",$1,$3,$7 }' /etc/passwd
+vi passwd.awk
+awk -f passwd.awk
+awk -f passwd.awk /etc/passwd
+vi passwd.awk
+awk -f passwd.awk /etc/passwd
+vi wina.txt
+vi lab5.awk
+awk -f lab5.awk wina.txt 
+vi lab5.awk
+awk -f lab5.awk wina.txt 
+rpm -qa | grep bash
+echo "tt" | sed -r -n '/to?t/p'
+echo "toot" | awk '/to?t/{print $0}'
+echo "tot" | awk '/to?t/{print $0}'
+ls
+cp -tp /tmp/bash_scripting/r07-sygnaly/ .
+cp -rp /tmp/bash_scripting/r07-sygnaly/ .
+cp -rp /tmp/bash_scripting/r09-awk/ .
+cp -rp /tmp/bash_scripting/r11-debug/ .
+ls -la | grep lab
+cp -rp /tmp/bash_scripting/labs/ .
+git status
+git add data.csv helloworld.awk passwd.awk r07-sygnaly/ r09-awk/ r11-debug/  sprawdz.sh servers  testServers.sh users.csv while.sh wina.txt
+git commit -m "adding scripts"
+history
+history | awk '$1 > 680' | cut -c 8- > day2-history.txt
